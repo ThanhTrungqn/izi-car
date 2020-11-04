@@ -7,6 +7,8 @@
 <!-- Bootstrap CSS -->
 <link href="css/style.css" type="text/css" rel="stylesheet" />
 <link href="css/bootstrap-datepicker.css" type="text/css" rel="stylesheet" />
+<link href="css/select2.min.css" type="text/css" rel="stylesheet" />
+<link href="css/dat.css" type="text/css" rel="stylesheet" />
 <!-- Favicon -->
 <!-- Favicon and Touch Icons -->
 <link href="images/favicon.png" rel="shortcut icon" type="image/png">
@@ -110,7 +112,7 @@
         <!-- extra item Search-->
         <div class="nav-item search border-0 pl-3 pr-0 px-lg-2" id="search"> <a class="nav-link" data-toggle="collapse" href="#search-open"><i class="fas fa-search"></i></a></div>
         <!-- extra item Btn-->
-        <div class="nav-item border-0 d-none d-lg-inline-block align-self-center"> <a href="#" class=" btn btn-sm btn-grad text-white mb-0">Đăng chuyến xe</a></div>
+        <div class="nav-item border-0 d-none d-lg-inline-block align-self-center"> <a href="#" class=" btn btn-sm bg-primary-page btn-grad text-white mb-0">Đăng chuyến xe</a></div>
       </div>
       <!-- Header Extras End--> 
     </div>
@@ -142,17 +144,17 @@
                   <h1 style="text-align: center; color:#fff; padding-bottom:10px;">IZICAR.VN nền tảng tìm xe ké khi đi du lịch</h1>
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-6 col-xs-12 padding8">
-                  <div class="form-group"> <span class="fas fa-map-marker-alt"></span>
-                    <select class="custom-select select-big pl32 txt-14">
-                      <option selected="">Địa điểm đi (tỉnh, thành phố)</option>
+                  <div class="form-group"> <i class="fas fa-map-marker-alt"></i>
+                    <select class="startLocation custom-select select-big pl32 txt-14" id="startLocation">
+                      <option >Địa điểm đi (tỉnh, thành phố)</option>
                       <option value="location1">Cảng Sa Kỳ đến đảo Lý Sơn</option>
                       <option value="location2">Đảo Lý Sơn về cảng Sa Kỳ</option>
                     </select>
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-6 col-xs-12 padding8">
-                  <div class="form-group"> <span class="fas fa-map-marker-alt"></span>
-                    <select class="custom-select select-big pl32 txt-14">
+                  <div class="form-group"> <i class="fas fa-map-marker-alt"></i>
+                    <select class="endLocation  custom-select select-big pl32 txt-14" id="endLocation">
                       <option selected="">Địa điểm đến (tỉnh, thành phố)</option>
                       <option value="location1">Cảng Sa Kỳ đến đảo Lý Sơn</option>
                       <option value="location2">Đảo Lý Sơn về cảng Sa Kỳ</option>
@@ -160,12 +162,12 @@
                   </div>
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
-                  <div class="form-group"><span class="far fa-calendar-alt"></span>
-                    <input class="form-control" type="text" id="datepicker" autocomplete="off" placeholder="Ngày đi">
+                  <div class="form-group"><i class="far fa-calendar-alt"></i>
+                    <input class="form-control" type="text" id="datepicker11" autocomplete="off" placeholder="Ngày đi">
                   </div>
                 </div>
                 <div class="col-lg-2 col-md-12 col-sm-6 col-xs-12 padding8">
-                  <div class="form-group"> <span class="fas fa-map-marker-alt"></span>
+                  <div class="form-group"> <i class="fas fa-map-marker-alt"></i>
                     <select class="custom-select select-big pl32 txt-14">
                       <option selected="">Thuê xe</option>
                       <option value="location1">Nguyên xe</option>
@@ -178,7 +180,7 @@
                 </div>
                 <div class="col-lg-2 col-md-12 col-sm-6 col-xs-12 padding8">
                   <div class="form-group">
-                    <a href="tim-xe.html"><button class="btn btn-primary btn-lg btn-grad" href="tim-xe.html" type="submit">Tìm kiếm</button></a>
+                    <a href="tim-xe.html"><button class="btn btn-primary btn-lg btn-grad bg-primary-page" href="tim-xe.html" type="submit">Tìm kiếm</button></a>
                   </div>
                 </div>
               </div>
@@ -191,7 +193,7 @@
 </section>
 
 <!-- Hướng dẫn đặt vé -->
-<section class="pt80 pb80">
+<!-- <section class="pt80 pb80">
   <div class="container ">
     <div class="row">
       <div class="col-md-8 mx-auto text-center mb-5">
@@ -230,18 +232,13 @@
       </div>
     </div>
   </div>
-</section>
-
+</section> -->
+<section class="pt40"></section>
 <!-- Khách sạn -->
-<section class="bg-light pt40 pb60 solutions bg-grad" style="background-color:#5bc9e2!important;">
+<section class="pt40 solutions chuyendiphobien">
   <div class="container">
-    <div class="row mb-5">
-      <div class="col-md-8">
-        <p class="subtitle text-secondary nopadding">Các chuyến đi phổ biến</p>
-        <h1 class="paddtop1 font-weight lspace-sm">Các chuyến đi phổ biến tại IZICAR</h1>
-      </div>
-      <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="" class="blist text-sm ml-2"> See all Hotels<i class="fas fa-angle-double-right ml-2"></i></a></div>
-    </div>
+    <h1 class="paddtop1 font-weight lspace-sm">Các chuyến đi phổ biến tại IZICAR</h1>
+
     <div class="row">
       <!-- Chuyến xe phổ biến -->
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
@@ -262,6 +259,7 @@
           </div>
         </a>
       </div>
+
       <!-- Chuyến xe phổ biến -->
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
         <a href="">
@@ -357,6 +355,11 @@
           </div>
         </a>
       </div>
+
+    </div>
+     <div class="row mb-5">
+      <div class="col-md-8"></div>
+      <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="" class="blist text-sm ml-2"> See all Hotels<i class="fas fa-angle-double-right ml-2"></i></a></div>
     </div>
   </div>
 </section>
@@ -367,31 +370,31 @@
     <div class="row">
       <div class="col-12 col-lg-8 mx-auto">
         <div class="title text-center">
-          <h2>Giới thiệu nền tảng đặt xe ké Izicar</h2>
-          <p class="mb-0">Lyson24h là hệ thống booking vé online và các tiện ích trên đảo Lý Sơn. Tại đây các bạn có thể tìm thấy các thông tin bổ ích nhất về du lịch tại đảo Lý Sơn, đặt vé tàu Online, xem thông tin khách sạn, và thuê xe du lịch trên và ngoài đảo</p>
+          <h2 class="title-section">Giới thiệu nền tảng đặt xe ké Izicar</h2>
+          <p class="mb-0 text-color-gray">Lyson24h là hệ thống booking vé online và các tiện ích trên đảo Lý Sơn. Tại đây các bạn có thể tìm thấy các thông tin bổ ích nhất về du lịch tại đảo Lý Sơn, đặt vé tàu Online, xem thông tin khách sạn, và thuê xe du lịch trên và ngoài đảo</p>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-4 mt-30">
-        <div class="featureBox icon-grad h-100">
+        <div class="featureBox icon-grad h-100 bg-white">
           <div class="feature-box-icon"><i class="fas fa-route"></i></div>
           <h3 class="feature-box-title">Đưa đón tận nới</h3>
-          <p class="feature-box-desc">Xe đưa đón tận nơi là xe đưa đón quý khách tại điểm đến và đến điểm đi theo yêu cầu của quý khách. Trước khi bắt đầu chuyến đi, các bán sẽ thỏa thuận với tài xế về nơi đưa đón. Lưu ý các bạn không cần phải trả thêm phí gì ngoài tiền thanh toán trên hệ thống</p>
+          <p class="feature-box-desc text-color-gray">Xe đưa đón tận nơi là xe đưa đón quý khách tại điểm đến và đến điểm đi theo yêu cầu của quý khách. Trước khi bắt đầu chuyến đi, các bán sẽ thỏa thuận với tài xế về nơi đưa đón. Lưu ý các bạn không cần phải trả thêm phí gì ngoài tiền thanh toán trên hệ thống</p>
           <a class="mt-3" href="#">Xem Chi tiết!</a> </div>
       </div>
       <div class="col-md-4 mt-30">
-        <div class="featureBox icon-grad h-100">
+        <div class="featureBox icon-grad h-100 bg-white">
           <div class="feature-box-icon"><i class="fab fa-avianex"></i></div>
           <h3 class="feature-box-title">Bao nguyên xe</h3>
-          <p class="feature-box-desc">Hệ thống xe du lịch 16 - 25 chỗ, chuyên đưa đón các đoàn du lịch thăm quan các địa điểm chính trên đảo Lý Sơn, tại đây có hướng dẫn viên du lịch, sẽ cho quý khách thêm nhiều kiến thức về huyện đảo và lịch sử khám phá bảo vệ biển đảo của dân tộc Việt Nam</p>
+          <p class="feature-box-desc text-color-gray">Hệ thống xe du lịch 16 - 25 chỗ, chuyên đưa đón các đoàn du lịch thăm quan các địa điểm chính trên đảo Lý Sơn, tại đây có hướng dẫn viên du lịch, sẽ cho quý khách thêm nhiều kiến thức về huyện đảo và lịch sử khám phá bảo vệ biển đảo của dân tộc Việt Nam</p>
           <a class="mt-3" href="#">Xem chi tiết!</a> </div>
       </div>
       <div class="col-md-4 mt-30">
-        <div class="featureBox icon-grad h-100">
+        <div class="featureBox icon-grad h-100 bg-white">
           <div class="feature-box-icon"><i class="fas fa-bullhorn"></i></div>
           <h3 class="feature-box-title">Đặt xe đi chung</h3>
-          <p class="feature-box-desc">Hệ thống đặt vé tàu đi từ cảng Sa Kỳ đến đảo Lý Sơn Online, In vé điện tử, gửi về điện thoại. Ngoài ra còn cung cấp vé đi từ Đảo Lớn Sang đảo bé, Giá cả niêm yết, đi theo đoàn từ 10 người trở lên liên hệ với chúng tôi để được bố trí vé và giảm giá</p>
+          <p class="feature-box-desc text-color-gray">Hệ thống đặt vé tàu đi từ cảng Sa Kỳ đến đảo Lý Sơn Online, In vé điện tử, gửi về điện thoại. Ngoài ra còn cung cấp vé đi từ Đảo Lớn Sang đảo bé, Giá cả niêm yết, đi theo đoàn từ 10 người trở lên liên hệ với chúng tôi để được bố trí vé và giảm giá</p>
           <a class="mt-3" href="#">Xem chi tiết!</a> </div>
       </div>
     </div>
@@ -399,12 +402,12 @@
 </section>
 
 <!-- Cẩm nang du lịch Lý Sơn -->
-<section class="bg-light pt40 pb60 solutions bg-grad" style="background-color:#5bc9e2!important;">
+<section class="pt40 solutions taisaonenluuchon bg-white">
   <div class="container">
-  	<p class="title-small">Tại sao nên lựa chọn</p>
-  	<h1 class="title-big text-center">Izicar hệ thống book xe du lịch giá rẻ</h1>
+  	<p class="title-small text-primary-page">Tại sao nên lựa chọn</p>
+  	<h1 class="title-big text-center title-section">Izicar hệ thống book xe du lịch giá rẻ</h1>
     <div class="row pb20 pt30">
-      <div class="col-md-7 mb-5 my-auto">
+      <div class="col-md-7 mb-5 my-auto text-color-gray">
         <h2 class="txt-30 pb10">1. Đội ngũ tài xế, hãng xe đa dạng, uy tín.</h2>
         <p class="pb10">Lý Sơn là 1 huyện đảo thuộc tỉnh quảng Ngãi, đảo lý Sơn nằm cách đất liền 30 Hải Lý, các bạn có thể bắt tàu đi đảo Lý Sơn tại cảng Sa Kỳ, quảng Ngãi</p>
         <p class="pb10"> Lý Sơn có 2 đảo chính: đảo Lớn và đảo Bé. Đảo Lớn (đảo chính, gọi chung là Lý Sơn nhé) nơi tàu từ cảng Sa Kỳ (Quảng Ngãi) sẽ cập cảng, gồm có 2 thôn: thôn Đông, thôn Tây. Các điểm tham quan chính ở Lý Sơn, đảo Bé để tắm và lặn ngắm san hô. Tháng 4,5 là mùa cao điểm ở đây. Thời tiết đẹp, thuận lợi cho lặn ngắm san hô. Đồng nghĩa với việc bạn phải đặt phòng và vé tàu trước khoảng 1 tuần.</p>
@@ -412,7 +415,7 @@
       <div class="col-md-5 mx-md-auto align-self-center my-auto">
 		<img class="rounded" src="images/cong-to-vo.jpg" alt="">
 		<div class="position-absolute left-0 bottom-0 ml-4 ml-md-n2 mb-3">
-			<a class="btn btn-grad" data-fancybox href="https://www.youtube.com/embed/n_Cn8eFo7u8"> <i class="fas fa-play text-white"></i>Play Video </a>
+			<a class="btn btn-grad bg-primary-page" data-fancybox href="https://www.youtube.com/embed/n_Cn8eFo7u8"> <i class="fas fa-play text-white"></i>Play Video </a>
 		</div>
 	  </div>
     </div>
@@ -421,7 +424,7 @@
       <div class="col-md-5 mx-md-auto align-self-center my-auto">
 		<img class="rounded" src="images/bien-ly-son.jpg" alt="">
 	  </div>
-      <div class="col-md-7 mb-5 my-auto">
+      <div class="col-md-7 mb-5 my-auto text-color-gray">
         <h2 class="txt-30 pb10">2. Cùng đặt xe share giá tiền tiết kiệm</h2>
         <p class="pb10">Lý Sơn là 1 huyện đảo thuộc tỉnh quảng Ngãi, đảo lý Sơn nằm cách đất liền 30 Hải Lý, các bạn có thể bắt tàu đi đảo Lý Sơn tại cảng Sa Kỳ, quảng Ngãi</p>
         <p class="pb10"> Lý Sơn có 2 đảo chính: đảo Lớn và đảo Bé. Đảo Lớn (đảo chính, gọi chung là Lý Sơn nhé) nơi tàu từ cảng Sa Kỳ (Quảng Ngãi) sẽ cập cảng, gồm có 2 thôn: thôn Đông, thôn Tây. Các điểm tham quan chính ở Lý Sơn, đảo Bé để tắm và lặn ngắm san hô. Tháng 4,5 là mùa cao điểm ở đây. Thời tiết đẹp, thuận lợi cho lặn ngắm san hô. Đồng nghĩa với việc bạn phải đặt phòng và vé tàu trước khoảng 1 tuần.</p>
@@ -430,7 +433,7 @@
 
 
     <div class="row pt30">
-      <div class="col-md-7 mx-auto mb-5">
+      <div class="col-md-7 mx-auto mb-5 text-color-gray">
         <h2 class="txt-30 pb10">3. Hình thức đặt xe giữ chỗ đơn giản</h2>
         <p class="pb10">Đảo Lý Sơn NẰm ccsh đát liền 30km, vì vậy để di chuyển ra đảo Lý Sơn chúng ta có thể lựa chọn các phương án sau đây để tiết kiệm chi phí và rẻ nhất có thể</p>
         <p>1. Các bạn di chuyển bằng máy bay, xe buýt đường dài hoặc tàu hỏa đến các nhà ga và sân bay gần với tỉnh Quảng Ngãi. Các sân bay có thể di chuyển đến chính là sân bay Chu Lai, Sân Bay Đà Nẵng, Tp Đà Nẵng, Tp Hội An, Tp Quảng Ngãi.</p>
@@ -446,7 +449,7 @@
       <div class="col-md-5 mx-md-auto align-self-center my-auto">
     <img class="rounded" src="images/bien-ly-son.jpg" alt="">
     </div>
-      <div class="col-md-7 mb-5 my-auto">
+      <div class="col-md-7 mb-5 my-auto text-color-gray">
         <h2 class="txt-30 pb10">4. Cách thức đặt đơn giản</h2>
         <p class="pb10">Lý Sơn là 1 huyện đảo thuộc tỉnh quảng Ngãi, đảo lý Sơn nằm cách đất liền 30 Hải Lý, các bạn có thể bắt tàu đi đảo Lý Sơn tại cảng Sa Kỳ, quảng Ngãi</p>
         <p class="pb10"> Lý Sơn có 2 đảo chính: đảo Lớn và đảo Bé. Đảo Lớn (đảo chính, gọi chung là Lý Sơn nhé) nơi tàu từ cảng Sa Kỳ (Quảng Ngãi) sẽ cập cảng, gồm có 2 thôn: thôn Đông, thôn Tây. Các điểm tham quan chính ở Lý Sơn, đảo Bé để tắm và lặn ngắm san hô. Tháng 4,5 là mùa cao điểm ở đây. Thời tiết đẹp, thuận lợi cho lặn ngắm san hô. Đồng nghĩa với việc bạn phải đặt phòng và vé tàu trước khoảng 1 tuần.</p>
@@ -510,7 +513,7 @@
                     <li><i class="fas fa-parking"></i><span>Parking</span></li>
                     <li><i class="fas fa-smoking-ban"></i><span>Non-smoking Rooms</span></li>
                     <li><i class="fas fa-utensils"></i><span> Restaurant</span></li>
-                    <span style="float:right;"><button class="btn btn-primary btn-md btn-grad" type="submit">Chi tiết</button></span>
+                    <span style="float:right;"><button class="btn btn-primary btn-md btn-grad bg-primary-page" type="submit">Chi tiết</button></span>
                   </ul>
                 </div>
               </article>
@@ -540,7 +543,7 @@
                     <li><i class="fas fa-parking"></i><span>Parking</span></li>
                     <li><i class="fas fa-smoking-ban"></i><span>Non-smoking Rooms</span></li>
                     <li><i class="fas fa-utensils"></i><span> Restaurant</span></li>
-                    <span style="float:right;"><button class="btn btn-primary btn-md btn-grad" type="submit">Chi tiết</button></span>
+                    <span style="float:right;"><button class="btn btn-primary btn-md btn-grad bg-primary-page" type="submit">Chi tiết</button></span>
                   </ul>
                 </div>
               </article>
@@ -553,35 +556,63 @@
   </div>
 </section>
 <!-- Tin Quảng Cáo -->
-<section class="bg-light pt30 pb20 solutions bg-grad">
+<section class="pt30 pb20 solutions gioithieungan">
+   <div class="overlay">
+      <img src="images/car-rental.png" alt="">
+   </div>
+ 
   <div class="container">
     <div class="row">
       <div class="col-md-8 text-center mx-auto mb-5">
-        <h2 class="title">Đảo Lý Sơn, Madive của Việt Nam</h2>
+        <h2 class="title text-white">Đảo Lý Sơn, Madive của Việt Nam</h2>
         <p>Thiên đường biển, đảo hoang dã và tự nhiên tại Việt Nam, được bình chọn là 1 trong những bãi biển đẹp nhất Việt Nam, hãy đến với Lý Sơn, các bạn sẽ có những kỷ niệm đáng nhớ</p>
       </div>
   	</div>
   </div>
+ 
 </section>
 
 <!-- Khách sạn -->
-<section class="Categories pt80 pb60 ">
+<section class="pt40 solutions chuyendiphobien">
   <div class="container">
-    <div class="row mb-5">
-      <div class="col-md-8">
-        <p class="subtitle text-secondary nopadding">Các chuyến đi phổ biến</p>
-        <h1 class="paddtop1 font-weight lspace-sm">Các chuyến đi phổ biến tại IZICAR</h1>
-      </div>
-      <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="" class="blist text-sm ml-2"> See all Hotels<i class="fas fa-angle-double-right ml-2"></i></a></div>
-    </div>
+    <h1 class="paddtop1 font-weight lspace-sm">Các chuyến đi phổ biến tại IZICAR</h1>
+
     <div class="row">
       <!-- Chuyến xe phổ biến -->
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
         <a href="">
           <div class="listroBox">
             <div class="listroBoxmain">
-              <h2>TP Đà Nẵng » Quảng Ngãi<span style="float:right;"><i class="fas fa-search"></i></span></h2>
-              <p class="card-text text-muted"><span class="h4 text-primary">160,000</span>/người<span class="primary-color" style="float:right"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="false"></i></span></p>
+              <h2>TP Đà Nẵng » Quảng Ngãi<span class="float-right"><i class="fas fa-search"></i></span></h2>
+              <p class="card-text text-muted"><span class="h4 text-primary">160,000</span>/người
+                <span class="primary-color float-right">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </span>
+                </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Chuyến xe phổ biến -->
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <a href="">
+          <div class="listroBox">
+            <div class="listroBoxmain">
+              <h2>TP Đà Nẵng » Quảng Ngãi<span class="float-right"><i class="fas fa-search"></i></span></h2>
+              <p class="card-text text-muted"><span class="h4 text-primary">160,000</span>/người
+                <span class="primary-color float-right">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </span>
+                </p>
             </div>
           </div>
         </a>
@@ -591,8 +622,16 @@
         <a href="">
           <div class="listroBox">
             <div class="listroBoxmain">
-              <h2>TP Đà Nẵng » Quảng Ngãi<span style="float:right;"><i class="fas fa-search"></i></span></h2>
-              <p class="card-text text-muted"><span class="h4 text-primary">160,000</span>/người<span class="primary-color" style="float:right"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="false"></i></span></p>
+              <h2>TP Đà Nẵng » Quảng Ngãi<span class="float-right"><i class="fas fa-search"></i></span></h2>
+              <p class="card-text text-muted"><span class="h4 text-primary">160,000</span>/người
+                <span class="primary-color float-right">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </span>
+                </p>
             </div>
           </div>
         </a>
@@ -602,8 +641,16 @@
         <a href="">
           <div class="listroBox">
             <div class="listroBoxmain">
-              <h2>TP Đà Nẵng » Quảng Ngãi<span style="float:right;"><i class="fas fa-search"></i></span></h2>
-              <p class="card-text text-muted"><span class="h4 text-primary">160,000</span>/người<span class="primary-color" style="float:right"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="false"></i></span></p>
+              <h2>TP Đà Nẵng » Quảng Ngãi<span class="float-right"><i class="fas fa-search"></i></span></h2>
+              <p class="card-text text-muted"><span class="h4 text-primary">160,000</span>/người
+                <span class="primary-color float-right">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </span>
+                </p>
             </div>
           </div>
         </a>
@@ -613,8 +660,16 @@
         <a href="">
           <div class="listroBox">
             <div class="listroBoxmain">
-              <h2>TP Đà Nẵng » Quảng Ngãi<span style="float:right;"><i class="fas fa-search"></i></span></h2>
-              <p class="card-text text-muted"><span class="h4 text-primary">160,000</span>/người<span class="primary-color" style="float:right"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="false"></i></span></p>
+              <h2>TP Đà Nẵng » Quảng Ngãi<span class="float-right"><i class="fas fa-search"></i></span></h2>
+              <p class="card-text text-muted"><span class="h4 text-primary">160,000</span>/người
+                <span class="primary-color float-right">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </span>
+                </p>
             </div>
           </div>
         </a>
@@ -624,27 +679,28 @@
         <a href="">
           <div class="listroBox">
             <div class="listroBoxmain">
-              <h2>TP Đà Nẵng » Quảng Ngãi<span style="float:right;"><i class="fas fa-search"></i></span></h2>
-              <p class="card-text text-muted"><span class="h4 text-primary">160,000</span>/người<span class="primary-color" style="float:right"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="false"></i></span></p>
+              <h2>TP Đà Nẵng » Quảng Ngãi<span class="float-right"><i class="fas fa-search"></i></span></h2>
+              <p class="card-text text-muted"><span class="h4 text-primary">160,000</span>/người
+                <span class="primary-color float-right">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </span>
+                </p>
             </div>
           </div>
         </a>
       </div>
-      <!-- Chuyến xe phổ biến -->
-      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <a href="">
-          <div class="listroBox">
-            <div class="listroBoxmain">
-              <h2>TP Đà Nẵng » Quảng Ngãi<span style="float:right;"><i class="fas fa-search"></i></span></h2>
-              <p class="card-text text-muted"><span class="h4 text-primary">160,000</span>/người<span class="primary-color" style="float:right"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="false"></i></span></p>
-            </div>
-          </div>
-        </a>
-      </div>
+
+    </div>
+     <div class="row mb-5">
+      <div class="col-md-8"></div>
+      <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="" class="blist text-sm ml-2"> See all Hotels<i class="fas fa-angle-double-right ml-2"></i></a></div>
     </div>
   </div>
 </section>
-
 <!-- =======================
 	newsletter --> 
 
@@ -720,6 +776,7 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
 <script src="js/jquery.min.js" type="text/javascript"></script> 
 <script src="js/popper.min.js" type="text/javascript"></script> 
+<script src="js/select2.min.js" type="text/javascript"></script> 
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/functions.js" type="text/javascript"></script> 
 <!--
@@ -734,6 +791,20 @@
 <script src="js/jquery.fancybox.min.js" type="text/javascript"></script> 
 -->
 <script src="js/bootstrap-datepicker.min.js" type="text/javascript"></script> 
+
 <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+    $('.startLocation').select2();
+		$('.endLocation').select2();
+	});
+	var start = new Date();
+	$(document).ready(function () {
+		$('#datepicker11').datepicker({
+			startDate : new Date(),
+		});
+	})
+	
+</script>
 </body>
 </html>
