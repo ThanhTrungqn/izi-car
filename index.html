@@ -147,8 +147,10 @@
                   <div class="form-group"> <i class="fas fa-map-marker-alt"></i>
                     <select class="startLocation custom-select select-big pl32 txt-14" id="startLocation">
                       <option >Địa điểm đi (tỉnh, thành phố)</option>
-                      <option value="location1">Cảng Sa Kỳ đến đảo Lý Sơn</option>
-                      <option value="location2">Đảo Lý Sơn về cảng Sa Kỳ</option>
+                      <option value="DN">Đà Nẵng</option>
+                      <option value="QT">Quảng Trị</option>
+                      <option value="QN">Quảng Ngãi</option>
+                      <option value="TTH">T.T.Huế</option>
                     </select>
                   </div>
                 </div>
@@ -156,8 +158,10 @@
                   <div class="form-group"> <i class="fas fa-map-marker-alt"></i>
                     <select class="endLocation  custom-select select-big pl32 txt-14" id="endLocation">
                       <option selected="">Địa điểm đến (tỉnh, thành phố)</option>
-                      <option value="location1">Cảng Sa Kỳ đến đảo Lý Sơn</option>
-                      <option value="location2">Đảo Lý Sơn về cảng Sa Kỳ</option>
+                      <option value="DN">Đà Nẵng</option>
+                      <option value="QT">Quảng Trị</option>
+                      <option value="QN">Quảng Ngãi</option>
+                      <option value="TTH">T.T.Huế</option>
                     </select>
                   </div>
                 </div>
@@ -192,47 +196,6 @@
   </div>
 </section>
 
-<!-- Hướng dẫn đặt vé -->
-<!-- <section class="pt80 pb80">
-  <div class="container ">
-    <div class="row">
-      <div class="col-md-8 mx-auto text-center mb-5">
-        <h2 class="title text-center">Đặt xe đi du lịch đơn giản và dễ dàng</h2>
-        <p>Để du lịch Lý Sơn, các bạn cần đặt trước vé tàu để có thể ra vào đảo. Tại đây chưa đến 5p, các bạn đã có ngay vé tàu của riêng mình để đi du lịch Lý Sơn. Lưu ý nên đặt vé trước 3 ngày để đảm bảo còn vé du lịch</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="feature-box h-100 text-center px-4 py-5">
-          <div class="feature-box-icon"><img class="w-25" src="images/tour/check-mark.svg" alt=""></div>
-          <h3 class="feature-box-title">1. Chọn chuyến xe</h3>
-          <p class="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum, eros eu tristique dictum, neque lorem laoreet purus</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="feature-box h-100 text-center all-text-white bg-grad px-4 py-5 border-radius-3" style="background-color:#5bc9c2!important">
-          <div class="feature-box-icon"><img class="w-25" src="images/tour/editor.svg" alt=""></div>
-          <h3 class="feature-box-title">2. Điền thông tin</h3>
-          <p class="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum, eros eu tristique dictum, neque lorem laoreet</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="feature-box h-100 text-center px-4 py-5">
-          <div class="feature-box-icon"><img class="w-25" src="images/tour/envelope.svg" alt=""></div>
-          <h3 class="feature-box-title">3. Thanh toán</h3>
-          <p class="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum, eros eu tristique dictum, neque lorem laoreet </p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="feature-box h-100 text-center all-text-white bg-grad px-4 py-5 border-radius-3">
-          <div class="feature-box-icon"><img class="w-25" src="images/tour/editor.svg" alt=""></div>
-          <h3 class="feature-box-title">4. Tài xế liên hệ</h3>
-          <p class="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum, eros eu tristique dictum, neque lorem laoreet</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 <section class="pt40"></section>
 <!-- Khách sạn -->
 <section class="pt40 solutions chuyendiphobien">
@@ -798,13 +761,21 @@
     $('.startLocation').select2();
 		$('.endLocation').select2();
 	});
-	var start = new Date();
-	$(document).ready(function () {
-		$('#datepicker11').datepicker({
-			startDate : new Date(),
-		});
-	})
-	
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('.startLocation').on('change', function() {
+        var startLocation = $(".startLocation option:selected").val(); 
+     
+        if (startLocation) {
+          $(".endLocation option").each(function(){
+            $(this).removeAttr("disabled");
+          });
+          $('.endLocation option[value="'+startLocation+'"]').attr("disabled", true);
+        }
+      });
+    });
 </script>
 </body>
 </html>
