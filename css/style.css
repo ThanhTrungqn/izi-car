@@ -7726,7 +7726,6 @@ contact-pg-section
 	position: relative;
 }
 .TravelGo-category-content-title {
-	padding-bottom: 20px;
 	margin-bottom: 10px;
 	border-bottom: 1px dotted #ccc;
 }
@@ -8522,11 +8521,12 @@ Discover Campaigns
 	position: relative;
 	margin-bottom: 30px;
 	border-radius: 3px;
-	border: 1px solid #d6d6d6;
+	border: 1px solid #007bff;
     transition: .2s ease-in-out;
     transform: translate3d(0, 0, 0);
 	margin-left: 0;
 	margin-right:0;
+    box-shadow: 0 3px 6px -4px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
 }
 .listroBox figure {
 	margin: 8px 0;
@@ -8739,10 +8739,8 @@ a.address:before {
  transition: .4s;
 	transform: scale(1);
 }
-.listroBox::before {
 
-}
-.listroBox::before , .listroBox::after {
+/*.listroBox::before , .listroBox::after {
    	transform: scale3d(0, 1, 1);
     border-width: 1px 0 1px 0;
     content: '';
@@ -8756,16 +8754,26 @@ a.address:before {
     transition: .25s ease-out;
     will-change: transform;
     contain: paint;
-}
+}*/
 
-.listroBox:hover::before, .listroBox:hover::after {
-    transform: scale3d(0.9999, 0.9999, 0.9999);
-}
+
 .listroBox:hover {
-	/*transform: translateY(-6px);*/
-	/*border: 1px solid #1087eb;*/
-	border-color: rgba(214, 214, 214, 0);
-    background: rgba(0, 0, 0, 0.01);
+	box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.22);
+        background: linear-gradient(to right top,#1087eb9e,#5baaed,#1087eb,#008bff,#1087eb9e);
+    transition: 0.5s;
+    color: #fff;
+}
+.listroBox:hover h2 {
+	color: #fff !important;
+}
+.listroBox:hover p {
+	color: #fff !important;
+}
+.listroBox:hover span {
+	color: #fff !important;
+}
+.listroBox:hover h2 span i {
+	color: #fff !important;
 }
 .testimonial {
 	position: relative;
