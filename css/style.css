@@ -845,8 +845,8 @@ header.navbar-sticky-on .navbar-brand .navbar-brand-item {
 }
 }
 .navbar-nav .nav-link {
-	font-size: 0.875rem;
-	font-weight: 500;
+	font-size: 1rem;
+	font-weight: 300;
 	text-transform: capitalize;
 	line-height: 84px;
 	padding-top: 0;
@@ -1014,6 +1014,9 @@ Banner1 Area CSS
 	background: none 65% 0% / cover no-repeat;
 	z-index: 0;
 }
+.height-350 {
+	height: 350px;
+}
 .height-500 {
 	height: 500px;
 }
@@ -1079,7 +1082,7 @@ figure {
 	background: -o-linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
 	background: -ms-linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
 	*/
-	background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+	background: linear-gradient(150deg, #3fd5ff 0%, #a7c6cad6 100%);
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two', GradientType=1 );
 }
 .all-text-white *, .text-all-white * {
@@ -1206,7 +1209,7 @@ figure {
  display: block;
  padding: 20px;
  color: #999;
- background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+ background: linear-gradient(150deg, #3fd5ff 0%, #a7c6cad6 100%);
 }
 .tab_container .tab-content p, .tab_container .tab-content .row {
 	-webkit-animation: fadeInScale 0.7s ease-in-out;
@@ -10598,4 +10601,32 @@ h2.title {
 	.ptm40{
 		padding-top:40px;
 	}
+}
+
+.icon-custom-1{
+	border: 1px solid #007bfe;
+    border-radius: 10px;
+    font-size:36px;
+    padding: 10px;
+    background-color: #007bfe;
+    color:#fff;
+}
+.icon-custom-2{
+	border: 1px solid #007bfe;
+    border-radius: 10px;
+    padding: 10px;
+    font-size:36px;
+    background-color: #007bfe;
+    color:#fff;
+}
+.icon-custom-3{
+	border: 1px solid #007bfe;
+    border-radius: 10px;
+    padding: 10px;
+    font-size:36px;
+    background-color: #007bfe;
+    color:#fff;
+}
+.box-shadow-custom{
+	box-shadow: 0 3px 6px -4px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
 }
