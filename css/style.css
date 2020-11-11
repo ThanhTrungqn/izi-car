@@ -760,8 +760,9 @@ header.navbar-sticky-on .navbar-brand .navbar-brand-item {
 	text-transform: capitalize;
 	position: relative;
 }
-.dropdown-item.active {
-	color: #007bff !important;
+.dropdown-item.active, .dropdown-item:active, .dropdown-item:hover  {
+	color: #fff !important;
+    background: #007bff !important;
 }
 .dropdown-toggle:after {
 	content: "\f107";
@@ -4941,7 +4942,7 @@ blog-single-section
 	color: #797979;
 }
 .blog-single-section .entry-meta li a:hover {
-	color: #0062cc;
+	color: #007bff;
 }
 .blog-single-section .entry-meta > li:last-child i {
 	position: relative;
@@ -4998,7 +4999,7 @@ blog-single-section
 }
 }
 .blog-single-section .post blockquote {
-	background-color: #0062cc;
+	background-color: #007bff;
 	color: #fff;
 	line-height: 1.6em;
 	padding: 120px 45px 65px;
@@ -5123,8 +5124,8 @@ blog-single-section
 }
 }
 .blog-single-section .tag-share .share a:hover {
-	background: #0062cc;
-	border-color: #0062cc;
+	background: #007bff;
+	border-color: #007bff;
 	color: #fff !important;
 }
 .blog-single-section .tag-share .share ul > li:first-child a {
@@ -5262,7 +5263,7 @@ blog-single-section
 	left: 2px;
 }
 .blog-single-section .more-posts a:hover .post-control-link {
-	color: #0062cc;
+	color: #007bff;
 }
 .blog-single-section .comments-area {
 	margin-top: 70px;
@@ -5351,7 +5352,7 @@ blog-single-section
 }
 }
 .blog-single-section .comments-area .comment-reply-link {
-	background: #0062cc;
+	background: #007bff;
 	font-size: 14px;
 	font-size: 0.875rem;
 	font-weight: 600;
@@ -5361,7 +5362,7 @@ blog-single-section
 	display: inline-block;
 }
 .blog-single-section .comments-area .comment-reply-link:hover {
-	background-color: #0062cc;
+	background-color: #007bff;
 }
 .blog-single-section .comment-respond {
 	margin-top: 70px;
@@ -5398,7 +5399,7 @@ blog-single-section
 .blog-single-section .comment-respond form input:focus, .blog-single-section .comment-respond form textarea:focus {
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	border-color: #0062cc;
+	border-color: #007bff;
 }
  @media (max-width: 991px) {
 .blog-single-section .comment-respond form input, .blog-single-section .comment-respond form textarea {
@@ -5439,7 +5440,7 @@ blog-single-section
 }
 .blog-single-section .comment-respond .form-submit input {
 	max-width: 180px;
-	background-color: #0062cc;
+	background-color: #007bff;
 	color: #fff;
 	font-weight: 500;
 	margin-bottom: 0;
@@ -6803,7 +6804,7 @@ contact-pg-section
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
-	border: 2px solid #0062cc;
+	border: 2px solid #007bff;
 	border-radius: 50%;
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -8913,7 +8914,7 @@ img {
 	padding: 6px 12px;
 	margin-left: -1px;
 	line-height: 1.42857143;
-	color: #337ab7;
+	color: #007bff;
 	text-decoration: none;
 	background-color: #fff;
 	border: 1px solid #ddd;
@@ -8940,7 +8941,7 @@ img {
 	padding: 6px 12px;
 	margin-left: -1px;
 	line-height: 1.42857143;
-	color: #337ab7;
+	color: #007bff;
 	text-decoration: none;
 	background-color: #fff;
 	border: 1px solid #ddd;
@@ -10483,7 +10484,7 @@ h2.title {
 	margin-top:20px;
 	margin-left:5px; 
 	margin-right:5px;
-	border: 4px dashed #8cc63f;
+	border: 4px dashed #007bff;
 	border-radius: 10px;
 	background-color:#fff;
 }
@@ -10523,8 +10524,8 @@ h2.title {
 	font-size:14px;
 	padding-right:10px;
 }
-.trip-brand-icon{
-	color: #5284af;
+.trip-brand-icon {
+	color: #007bff;
 }
 .bg-grad-style{
 	background: linear-gradient(150deg, #4e76c7 0%, #2ab9a5 100%);
@@ -10570,7 +10571,7 @@ h2.title {
 }
 .title-payemnt{
 	margin-bottom:15px;
-	color:#1C6EA4;
+	color:#007bff;
 	font-size:20px;
 	font-weight:550;
 }
