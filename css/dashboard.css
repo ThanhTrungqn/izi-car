@@ -127,6 +127,52 @@ a, a:hover, a:focus {
   padding-right: 0px;
 }
 
+.wrapper #content .dashboard .profile .profile__body form .tab-content .form-group {
+  margin-bottom: 10px;
+}
+
+.wrapper #content .dashboard .profile .profile__body form .tab-content .form-group i {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 48px;
+  text-align: center;
+  pointer-events: none;
+  color: #007bff;
+}
+
+.wrapper #content .dashboard .profile .profile__body form .tab-content .form-group input[type="file"] {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.wrapper #content .dashboard .profile .profile__body form .tab-content .form-group input {
+  border: 1px solid #007bff;
+  padding: 12px 15px 12px 32px;
+  opacity: 0.7;
+  font-size: 14px;
+  color: #222222;
+  font-style: bold;
+  border-radius: 0;
+}
+
+.wrapper #content .dashboard .profile .profile__body form .tab-content .form-group img#showAvatarImg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper #content .dashboard .profile .profile__body form .tab-content .form-group select.custom-select {
+  border: 1px solid #007bff;
+}
+
+.wrapper #content .dashboard .profile .profile__body form .tab-content .form-group span.errors-feedback {
+  padding-top: 5px;
+  color: red;
+}
+
 .history-table div .card {
   background: #fff;
   min-height: 50px;
