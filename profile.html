@@ -185,54 +185,185 @@
                 </div>
                 <div class="profile__body">
                     <form action="">
-                        <div class="row tab-content">
-                            <div class="form-group col-md-6">
-                                <label for="">Họ</label>
-                                <i class="fas fa-user-check"></i>
-                                <input class="form-control hasDatepicker" type="text" autocomplete="off" placeholder="Nhập họ của bạn...">
-                                <span class="errors-feedback">Bạn cần phải nhập tên</span>
+                        <div class="col-md-8 offset-2 profile__body__list">
+                            <div class="row list__header">
+                                <div class="col-md-9 list__left">
+                                    <h3>Trần Đình Đạt</h3>
+                                    <h4>Tài xế</h4>
+                                </div>
+                                <div class="col-md-2">
+                                  <img src="images/about-1.jpg" alt="">
+                                </div>
+                                <i class="fas fa-chevron-right"></i>
                             </div>
-                            <div class="form-group col-md-6">
-                                <label for="">Tên</label>
-                                <i class="fas fa-user-check"></i>
-                                <input class="form-control hasDatepicker" type="text" autocomplete="off" placeholder="Nhập tên của bạn">
+                            <div class="list__content">
+                              <ul class="list-group">
+                                <li class="list-group-item"><i class="fas fa-plus-circle"></i> <a href="" data-toggle="modal" data-target="#profile-modal"> Thông tin cá nhân</a></li>
+                                <li class="list-group-item"><i class="fas fa-plus-circle"></i> <a href="" data-toggle="modal" data-target="#profile-UploadImage-modal"> Thay đổi hình đại diện</a></li>
+                                <li class="list-group-item"><i class="fas fa-plus-circle"></i> <a href=""data-toggle="modal" data-target="#profile-UploadPassword-modal"> Thay đổi mật khẩu</a></li>
+                              </ul>
+                             </div>
+                             
+                             <!-- profile modal  -->
+                             <div class="modal" id="profile-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title">Cập nhật thông tin cá nhân</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form action="">
+                                      <div class="row tab-content">
+                                          <div class="form-group col-md-6">
+                                              <label for="">Họ</label>
+                                              <i class="fas fa-user-check"></i>
+                                              <input class="form-control hasDatepicker" type="text" autocomplete="off" placeholder="Nhập họ của bạn...">
+                                              <span class="errors-feedback">Bạn cần phải nhập tên</span>
+                                          </div>
+                                          <div class="form-group col-md-6">
+                                              <label for="">Tên</label>
+                                              <i class="fas fa-user-check"></i>
+                                              <input class="form-control hasDatepicker" type="text" autocomplete="off" placeholder="Nhập tên của bạn">
+                                          </div>
+                                          <div class="form-group col-md-6">
+                                              <label for="">Email</label>
+                                              <i class="fas fa-envelope"></i>
+                                              <input class="form-control hasDatepicker" type="text" autocomplete="off" placeholder="Nhập email của bạn...">
+                                          </div>
+                                          <div class="form-group col-md-6">
+                                              <label for="">Số điện thoại</label>
+                                              <i class="fas fa-phone-volume"></i>
+                                              <input class="form-control hasDatepicker" type="text" autocomplete="off" placeholder="Nhập số điện thoại của bạn...">
+                                          </div>
+                                         
+                                          <div class="form-group col-md-3">
+                                              <label for="">Ngày sinh</label>
+                                              <i class="fas fa-calendar-alt"></i>
+                                              <input class="form-control hasDatepicker" id="datepicker-1" type="date" autocomplete="off" placeholder="Chọn ngày sinh của bạn...">
+                                          </div>
+                                         <div class="form-group col-md-3">
+                                           <label for="">Giới tính</label>
+                                           <i class="fas fa-venus-mars"></i>
+                                           <select class="form-control  custom-select select-big pl32 txt-14" name="" id="">
+                                             <option>Nam</option>
+                                             <option>Nữ</option>
+                                             <option>Khác</option>
+                                           </select>
+                                         </div>
+                                      </div>
+                                      <!-- end row  -->
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                              <button type="submit" id="" class="btn btn-primary bg-primary-page btn-sm">Cập nhật</button>
+                                          </div>
+                                      </div>
+                                  </form>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div class="form-group col-md-6">
-                                <label for="">Email</label>
-                                <i class="fas fa-envelope"></i>
-                                <input class="form-control hasDatepicker" type="text" autocomplete="off" placeholder="Nhập email của bạn...">
+                            <!-- end profile modal  -->
+
+                            <!-- profile upload image modal  -->
+                            <div class="modal" id="profile-UploadImage-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title">Cập nhật hình đại diện</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form action="">
+                                      <div class="row tab-content">
+                                        <div class="form-group ">
+                                          <div class="row">
+                                            <input hidden id="inputShowAvatarImg" type="file" class="form-control-file" name="" placeholder="" aria-describedby="fileHelpId">
+                                          <div class="col-md-4 pr-0 pl-0">
+                                            <div class="text-center">
+                                              <img src="https://cdn.blablacar.com/kairos/assets/build/images/default-45b9eeb46d269dc11aed567dadaec5f6.png" alt="" id="showAvatarImg" class=" p-0 mt-2 col-md-6">
+                                            </div>
+                                            <label  for="inputShowAvatarImg" class="btn btn-outline-info btn-sm mt-3 ">Chọn ảnh</label>
+                                          </div>
+                                          <div class="col-md-8">
+                                            <p>
+                                              Nhìn thẳng về phía trước mà không đeo kính râm và không có ai bên cạnh bạn.
+                                            </p>
+                                          </div>
+                                        </div>
+                                        </div>
+                                      </div>
+                                      <!-- end row  -->
+                                      <div class="row">
+                                          <div class="col-md-12 text-center">
+                                              <button type="submit" id="" class="btn btn-primary bg-primary-page btn-sm">Cập nhật</button>
+                                          </div>
+                                      </div>
+                                  </form>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div class="form-group col-md-6">
-                                <label for="">Số điện thoại</label>
-                                <i class="fas fa-phone-volume"></i>
-                                <input class="form-control hasDatepicker" type="text" id="datePickerBirth"  autocomplete="off" placeholder="Nhập số điện thoại của bạn...">
+                            <!-- end profile upload modal -->
+
+                            <!-- profile update password -->
+                            <div class="modal" id="profile-UploadPassword-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title">Cập nhật mật khẩu</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form action="">
+                                      <div class="row tab-content">
+                                        <div class="form-group col-md-6">
+                                          <label for="">Email</label>
+                                          <i class="fas fa-phone-volume"></i>
+                                          <input class="form-control hasDatepicker" type="text" autocomplete="off" placeholder="Nhập email">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                          <label for="">Mật khẩu cũ</label>
+                                          <i class="fas fa-phone-volume"></i>
+                                          <input class="form-control hasDatepicker" type="text" autocomplete="off" placeholder="Nhập mật khẩu cũ...">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                          <label for="">Mật khẩu mới</label>
+                                          <i class="fas fa-phone-volume"></i>
+                                          <input class="form-control hasDatepicker" type="text" autocomplete="off" placeholder="Nhập mật khẩu mới...">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                          <label for="">Xác nhận mật khẩu</label>
+                                          <i class="fas fa-phone-volume"></i>
+                                          <input class="form-control hasDatepicker" type="text" autocomplete="off" placeholder="Xác nhận mật khẩu...">
+                                        </div>
+                                      </div>
+                                      <!-- end row  -->
+                                      <div class="row">
+                                          <div class="col-md-12 text-center">
+                                              <button type="submit" id="" class="btn btn-primary bg-primary-page btn-sm">Cập nhật</button>
+                                          </div>
+                                      </div>
+                                  </form>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div class="form-group col-md-6">
-                              <label for="">Ảnh đại diện</label>
-                              <input id="inputShowAvatarImg" type="file" class="form-control-file" name="" id="" placeholder="" aria-describedby="fileHelpId">
-                              <img src="images/about-1.jpg" alt="" id="showAvatarImg" class=" p-0 mt-2 col-md-6">
-                            </div>
-                            <div class="form-group col-md-3">
-                                <label for="">Ngày sinh</label>
-                                <i class="fas fa-calendar-alt"></i>
-                                <input class="form-control hasDatepicker" id="datepicker-1" type="date" id="datePickerBirth"  autocomplete="off" placeholder="Chọn ngày sinh của bạn...">
-                            </div>
-                           <div class="form-group col-md-3">
-                             <label for="">Giới tính</label>
-                             <i class="fas fa-venus-mars"></i>
-                             <select class="form-control  custom-select select-big pl32 txt-14" name="" id="">
-                               <option>Nam</option>
-                               <option>Nữ</option>
-                               <option>Khác</option>
-                             </select>
-                           </div>
-                        </div>
+                            <!-- end profile upload modal -->
+
                         <!-- end row  -->
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-md-12">
                                 <button type="submit"  id="" class="btn btn-primary bg-primary-page btn-sm">Cập nhật</button>
                             </div>
-                        </div>
+                        </div> -->
+                      </div>
                     </form>
                 </div>
             </div>
