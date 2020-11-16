@@ -33,13 +33,21 @@ a, a:hover, a:focus {
         }
         #sidebarCollapse {
             position: absolute;
-            left: 245px;
+            // left: 245px;
+            // top: -1px;
+            left: 198px;
             top: -1px;
             color: #333;
             border: 1px solid #ddd;
             border-left: 0px;
             background: #fff;
-
+            padding: 0;
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: .25rem;
+            }
         }
         .btn:focus {
             outline: 0;
@@ -343,6 +351,10 @@ a, a:hover, a:focus {
     }
     
 }
+.select2-container{
+    width: 100% !important;
+    padding: 0px 6px !important; 
+}
 
 .history-table {
     div {
@@ -483,11 +495,16 @@ a[data-toggle="collapse"] {
 @media (min-width: 992px) {
     .wrapper {
         #sidebar {
-            position: relative !important;
+            position: relative !important;           
             // margin-left: -250px;
         }
         #sidebar.active {
             margin-left: -250px !important;
+        }
+        #sidebar.active #sidebarCollapse {
+            position: fixed!important;
+            top: 145px !important;
+            left: 0px !important;
         }
     }
  
@@ -500,6 +517,18 @@ a[data-toggle="collapse"] {
         #sidebar.active {
             margin-left: 0px;
         }
+        #sidebar.active #sidebarCollapse {
+            position: absolute !important;
+            // left: 245px !important;
+            // top: -1px !important;
+            left: 198px !important;
+            top: -1px !important;
+        }
+        #sidebarCollapse {
+            position: fixed!important;
+            top: 104px !important;
+            left: 0px !important;
+        }
     }
 }
 @media (max-width: 576px) {
@@ -510,10 +539,19 @@ a[data-toggle="collapse"] {
         #sidebar.active {
             margin-left: 0px;
         }
+        // #sidebar.active #sidebarCollapse {
+        //     position: absolute !important;
+        //     left: 245px !important;
+        //     top: -1px !important;
+        // }
     }
     .dashboard-task-infos{
         width: 200%;
         overflow-x: scroll;
     }
- 
+    #sidebarCollapse {
+        position: fixed!important;
+        top: 104px !important;
+        left: 0px !important;
+    }
 }

@@ -41,12 +41,21 @@ a, a:hover, a:focus {
 
 .wrapper #sidebar #sidebarCollapse {
   position: absolute;
-  left: 245px;
+  left: 198px;
   top: -1px;
   color: #333;
   border: 1px solid #ddd;
   border-left: 0px;
   background: #fff;
+  padding: 0;
+}
+
+.wrapper #sidebar #sidebarCollapse img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: .25rem;
 }
 
 .wrapper #sidebar .btn:focus {
@@ -353,6 +362,11 @@ a, a:hover, a:focus {
   }
 }
 
+.select2-container {
+  width: 100% !important;
+  padding: 0px 6px !important;
+}
+
 .history-table div .card {
   background: #fff;
   min-height: 50px;
@@ -494,6 +508,11 @@ a[data-toggle="collapse"] {
   .wrapper #sidebar.active {
     margin-left: -250px !important;
   }
+  .wrapper #sidebar.active #sidebarCollapse {
+    position: fixed !important;
+    top: 145px !important;
+    left: 0px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -502,6 +521,16 @@ a[data-toggle="collapse"] {
   }
   .wrapper #sidebar.active {
     margin-left: 0px;
+  }
+  .wrapper #sidebar.active #sidebarCollapse {
+    position: absolute !important;
+    left: 198px !important;
+    top: -1px !important;
+  }
+  .wrapper #sidebarCollapse {
+    position: fixed !important;
+    top: 104px !important;
+    left: 0px !important;
   }
 }
 
@@ -515,6 +544,11 @@ a[data-toggle="collapse"] {
   .dashboard-task-infos {
     width: 200%;
     overflow-x: scroll;
+  }
+  #sidebarCollapse {
+    position: fixed !important;
+    top: 104px !important;
+    left: 0px !important;
   }
 }
 /*# sourceMappingURL=dashboard.css.map */

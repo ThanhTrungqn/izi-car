@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/bootstrap-datepicker.css" type="text/css" rel="stylesheet" />
+<link href="css/select2.min.css" type="text/css" rel="stylesheet" />
+<link href="css/dat.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="css/dashboard.css">
+<!-- Favicon -->
+<!-- Favicon and Touch Icons -->
+<link href="images/favicon.png" rel="shortcut icon" type="image/png">
+<link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+<title>TravelGo - Travel, Tour Booking HTML5 Template</title>
+</head>
+<style>
+
+</style>
+<body>
+<!-- =======================
+	header Start-->
+<header class="header-static navbar-sticky navbar-light shadow"> 
+  <!-- Search -->
+  <div class="top-search collapse bg-light" id="search-open" data-parent="#search">
+    <div class="container">
+      <div class="row position-relative">
+        <div class="col-md-8 mx-auto py-5">
+          <form>
+            <div class="input-group">
+              <input class="form-control border-radius-right-0 border-right-0" type="text" name="search" autofocus placeholder="What are you looking for?">
+              <button type="button" class="btn btn-grad border-radius-left-0 mb-0">Search</button>
+            </div>
+          </form>
+          <p class="small mt-2 mb-0"><strong>e.g.</strong>Template, TravelGo, WordPress </p>
+        </div>
+        <a class="position-absolute top-0 right-0 mt-3 mr-3" data-toggle="collapse" href="#search-open"><i class="fas fa-window-close"></i></a> </div>
+    </div>
+  </div>
+  <!-- End Search --> 
+  
+  <!-- Navbar top start-->
+  <div class="navbar-top d-none d-lg-block">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center"> 
+        <!-- navbar top Left-->
+        <div class="d-flex align-items-center"> 
+          <!-- Language -->
+          <div class="dropdown"> <a class="dropdown-toggle" href="#" role="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="dropdown-item-icon" src="images/flag/uk.svg" alt=""> English </a>
+            <div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguage"> <span class="dropdown-item-text">Select language</span>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><img class="dropdown-item-icon" src="images/flag/sp.svg" alt=""> Español</a> <a class="dropdown-item" href="#"><img class="dropdown-item-icon" src="images/flag/fr.svg" alt=""> Français</a> <a class="dropdown-item" href="#"><img class="dropdown-item-icon" src="images/flag/gr.svg" alt=""> Deutsch</a> </div>
+          </div>
+          <!-- Top info -->
+          <ul class="nav list-unstyled ml-3">
+            <li class="nav-item mr-3"> <a class="navbar-link" href="#"><strong>Phone:</strong> (024) 123-1457</a> </li>
+            <li class="nav-item mr-3"> <a class="navbar-link" href="#"><strong>Email:</strong> help@TravelGo.com</a> </li>
+          </ul>
+        </div>
+        
+        <!-- navbar top Right-->
+        <div class="d-flex align-items-center"> 
+          <!-- Top Account -->
+          <div class="dropdown"> <a class="dropdown-toggle" href="#" role="button" id="dropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-user mr-2"></i>Account </a>
+            <div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownAccount"> <a class="dropdown-item" href="sign-in.html">Log In</a> <a class="dropdown-item" href="sign-up.html">Register</a> <a class="dropdown-item" href="#">Settings</a> </div>
+          </div>
+          <!-- top link -->
+          <ul class="nav">
+            <li class="nav-item"> <a class="nav-link" href="">Contact</a> </li>
+          </ul>
+          <!-- top social -->
+          <ul class="social-icons">
+            <li class="social-icons-item social-facebook m-0"> <a class="social-icons-link w-auto px-2" href="#"><i class="fab fa-facebook-f"></i></a> </li>
+            <li class="social-icons-item social-instagram m-0"> <a class="social-icons-link w-auto px-2" href="#"><i class="fab fa-twitter"></i></a> </li>
+            <li class="social-icons-item social-twitter m-0"> <a class="social-icons-link w-auto pl-2" href="#"><i class="fab fa-instagram"></i></a> </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar top End--> 
+  
+  <!-- Logo Nav Start -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container"> 
+      <!-- Logo --> 
+      <a class="navbar-brand" href="index.html"> <img src="images/logo-header.png" alt="travelgo"> </a> 
+      <!-- Menu opener button -->
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"> </span> </button>
+      <!-- Main Menu Start -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <!-- Menu item 1 Demos-->
+          <li class="nav-item active"> <a class="nav-link" href="#">Trang chủ</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#">Giới thiệu</a></li>
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="docMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hướng dẫn</a>
+            <ul class="dropdown-menu" aria-labelledby="docMenu">
+              <li><a class="dropdown-item" href="#">Hướng dẫn đặt xe</a></li>
+              <li><a class="dropdown-item" href="#">Hướng dẫn đăng chuyển xe</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"> <a class="nav-link" href="#">FAQs</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#">Tin tức</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <!-- Main Menu End --> 
+      <!-- Header Extras Start-->
+      <div class="navbar-nav"> 
+        <!-- extra item Search-->
+        <div class="nav-item search border-0 pl-3 pr-0 px-lg-2" id="search"> <a class="nav-link" data-toggle="collapse" href="#search-open"><i class="fas fa-search"></i></a></div>
+        <!-- extra item Btn-->
+        <div class="nav-item border-0 d-none d-lg-inline-block align-self-center"> <a href="#" class=" btn btn-sm bg-primary-page btn-grad text-white mb-0">Đăng chuyến xe</a></div>
+      </div>
+      <!-- Header Extras End--> 
+    </div>
+  </nav>
+  <!-- Logo Nav End --> 
+</header>
+
+
+<div class="wrapper">
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <button type="button" id="sidebarCollapse" class="btn sidebarCollapse">
+            <!-- <i class="fas fa-align-left"></i> -->
+            <img src="./images/author.jpg" alt="">
+        </button>
+        <div class="sidebar-header">
+            <h3>Tài xế 01</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li>
+              <a href="#"><i class="fas fa-home"></i> Bảng điều khiển</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-info-circle active"></i> Thông tin tài xế</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li  class="active">
+                        <a href="#">Cập nhật thông tin</a>
+                    </li>
+                    <li>
+                        <a href="#">Đổi mật khẩu</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-plus-circle"></i> Thêm chuyến đi</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-history"></i> Lịch sử chuyến đi <span class="badge badge-pill badge-info">02</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="far fa-bell"></i> Thông báo <span class="badge badge-pill badge-info">04</span></a>
+            </li>
+           
+            <li>
+                <a href="#"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- end #sidebar  -->
+
+
+    <!-- Page Content -->
+    <div id="content" class="container">
+        <div class="row notification">
+            <div class="col-md-10 offset-1">
+                <div class="notification-content alert alert-warning">
+                    <img src="./images/exclamation-mark.svg" alt="">
+                    <p>Hôm nay mưa to nên đi tốc độ phù hợp để tránh nguy hiểm</p>
+                  </div>
+            </div>
+        </div>
+
+        <section class="dashboard pt20">
+          <div class="section-add-car">
+            
+          </div>
+          <div class="row history-table">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="card">
+                  <div class="header">
+                      <h2 class="float-left">Danh sách chuyến đi</h2>
+                      <a  class="btn btn-primary btn-sm float-right bg-primary-page" data-toggle="modal" data-target="#modal-them-chuyen-di">Thêm chuyến đi</a>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="modal-them-chuyen-di" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Thêm chuyến đi</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body row">
+                               <div class="form-group col-md-6">
+                                 <label for="">Tài xế</label>
+                                 <input type="text" name=""  class="form-control">
+                               </div>
+                               <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="">Chọn xe</label>
+                                  <select class="endLocation  custom-select select-big pl32 txt-14">
+                                   <option value="1">Mazda 3 1.5L Premium - 2020</option>
+                                   <option value="1">Mazda 3 1.5L Premium - 2020</option>
+                                   <option value="1">Mazda 3 1.5L Premium - 2020</option>
+                                   <option value="1">Mazda 3 1.5L Premium - 2020</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="">Điểm đi</label>
+                                  <select class="startLocation custom-select select-big pl32 txt-14" >
+                                    <option >Địa điểm đi</option>
+                                    <option value="DN">Đà Nẵng</option>
+                                    <option value="QT">Quảng Trị</option>
+                                    <option value="QN">Quảng Ngãi</option>
+                                    <option value="TTH">T.T.Huế</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="">Điểm đến</label>
+                                  <select class="endLocation  custom-select select-big pl32 txt-14" >
+                                    <option >Địa điểm đến</option>
+                                    <option value="DN">Đà Nẵng</option>
+                                    <option value="QT">Quảng Trị</option>
+                                    <option value="QN">Quảng Ngãi</option>
+                                    <option value="TTH">T.T.Huế</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="">Ngày đi</label>
+                                  <input class="form-control" type="datetime-local" autocomplete="off" placeholder="Ngày đi">
+                                </div>
+                              </div>
+                              
+                              <div class="col-md-3">
+                                <div class="form-group">
+                                  <label for="">Số ghế trống</label>
+                                  <select class="endLocation  custom-select select-big pl32 txt-14">
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                  </select>
+                                </div>
+                              </div>
+
+                              <div class="form-group col-md-3">
+                                <label for="">Giá tiền </label>
+                               <input type="text" class="form-control" >
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary btn-sm text-white bg-danger" data-dismiss="modal">Đóng</button>
+                              <button type="submit" class="btn btn-primary btn-sm bg-primary-page">Thêm chuyến đi</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="body">
+                      <div class="table-responsive">
+                         <table class="table table-hover dashboard-task-infos">
+                              <thead>
+                                  <tr>
+                                      <th>#</th>
+                                      <th>Tài xế</th>
+                                      <th>Xe</th>
+                                      <th>Điểm đi</th>
+                                      <th>Điểm đên</th>
+                                      <th>Thời gian đi</th>
+                                      <th>Số ghế trống</th>
+                                      <th>Tiền</th>
+                                      <th>Trạng thái</th>
+                                      <th>Thao tác</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>1</td>
+                                      <td>Tran Dinh Dat</td>
+                                      <td>Mazda 3 1.5L Premium - 2020</td>
+                                      <td>Đà Nẵng</td>
+                                      <td>Quảng Trị</td>
+                                      <td>8:30 11/11/2020</td>
+                                      <td>4</td>
+                                      <td>100.000đ</td>
+                                      <td><span class="badge badge-success"><i class="fas fa-check"></i></span></td>
+                                      <td>
+                                        <div class="btn-group">
+                                           <a class="btn btn-primary btn-sm bg-primary-page mr-2"  data-toggle="modal" data-target="#modal-edit-chuyen-di"><i class="far fa-edit"></i></a>
+                                           <a class="btn btn-primary btn-sm text-white bg-danger" data-toggle="modal" data-target="#modal-delete-chuyen-di"><i class="far fa-trash-alt"></i></a>
+                                        </div>
+
+                                       <!-- Modal -->
+                                       <div class="modal fade" id="modal-edit-chuyen-di" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title">Cập nhật chuyến đi</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body row">
+                                               <div class="form-group col-md-6">
+                                                 <label for="">Tài xế</label>
+                                                 <input type="text" name=""  class="form-control">
+                                               </div>
+                                               <div class="col-md-6">
+                                                <div class="form-group">
+                                                  <label for="">Chọn xe</label>
+                                                  <select class="endLocation  custom-select select-big pl32 txt-14">
+                                                   <option value="1">Mazda 3 1.5L Premium - 2020</option>
+                                                   <option value="1">Mazda 3 1.5L Premium - 2020</option>
+                                                   <option value="1">Mazda 3 1.5L Premium - 2020</option>
+                                                   <option value="1">Mazda 3 1.5L Premium - 2020</option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6">
+                                                <div class="form-group">
+                                                  <label for="">Điểm đi</label>
+                                                  <select class="startLocation custom-select select-big pl32 txt-14" >
+                                                    <option >Địa điểm đi</option>
+                                                    <option value="DN">Đà Nẵng</option>
+                                                    <option value="QT">Quảng Trị</option>
+                                                    <option value="QN">Quảng Ngãi</option>
+                                                    <option value="TTH">T.T.Huế</option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6">
+                                                <div class="form-group">
+                                                  <label for="">Điểm đến</label>
+                                                  <select class="endLocation  custom-select select-big pl32 txt-14" >
+                                                    <option >Địa điểm đến</option>
+                                                    <option value="DN">Đà Nẵng</option>
+                                                    <option value="QT">Quảng Trị</option>
+                                                    <option value="QN">Quảng Ngãi</option>
+                                                    <option value="TTH">T.T.Huế</option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6">
+                                                <div class="form-group">
+                                                  <label for="">Ngày đi</label>
+                                                  <input class="form-control" type="datetime-local" autocomplete="off" placeholder="Ngày đi">
+                                                </div>
+                                              </div>
+                                              
+                                              <div class="col-md-3">
+                                                <div class="form-group">
+                                                  <label for="">Số ghế trống</label>
+                                                  <select class="endLocation  custom-select select-big pl32 txt-14">
+                                                   <option value="1">1</option>
+                                                   <option value="2">2</option>
+                                                   <option value="3">3</option>
+                                                   <option value="4">4</option>
+                                                   <option value="5">5</option>
+                                                   <option value="6">6</option>
+                                                   <option value="7">7</option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                
+                                              <div class="form-group col-md-3">
+                                                <label for="">Giá tiền </label>
+                                               <input type="text" class="form-control" >
+                                              </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-primary btn-sm text-white bg-danger" data-dismiss="modal">Đóng</button>
+                                              <button type="submit" class="btn btn-primary btn-sm bg-primary-page">Cập nhật chuyến đi</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                                         <!-- Modal -->
+                                         <div class="modal fade" id="modal-delete-chuyen-di" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                                          <div class="modal-dialog " role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title">Xóa chuyến đi</h5>
+                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                              </div>
+                                              <div class="modal-body row">
+                                                  <p class="pl-3">Bạn có chắc chắn muốn xóa chuyến đi này không!</p>                                                          
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary btn-sm bg-danger" data-dismiss="modal">Đóng</button>
+                                                <button type="submit" class="btn btn-primary btn-sm bg-primary-page">Xóa</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </td>
+                                  </tr>
+                                 
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        </section>
+
+      
+        <!-- end section dashboard -->
+    </div>
+    <!-- end content  -->
+</div>      
+
+<section class="pt40 slutions">
+	<div class="container">
+	</div>
+</section>
+
+	<!-- footer  -->
+<footer class="footer footer-dark pt-6 position-relative">
+  <div class="footer-content">
+    <div class="container">
+      <div class="row"> 
+        <!-- Footer widget 1 -->
+        <div class="col-md-3 col-sm-6 order-sm-1">
+          <div class="widget address"> <a href="index.html" class="footer-logo mb-3 d-block"> 
+            <!-- SVG Logo Start --> 
+            <img src="images/logo-footer.png" > 
+            <!-- SVG Logo End --> 
+            </a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <!-- Footer widget 2 -->
+        <div class="col-md-3 col-sm-4 order-sm-3">
+          <div class="widget">
+            <h6>Các tiện ích</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="">Đặt vé tàu</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Thuê xe</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Đặt khách sạn</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Đặt xe tham quan đảo</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Đặt cano đi đảo bé</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Footer widget 4 -->
+        <div class="col-md-3 col-sm-4 order-sm-5">
+          <div class="widget">
+            <h6>Theo dõi Fanpage</h6>
+          </div>
+        </div>
+        <!-- Footer widget 5 -->
+        <div class="col-md-3 col-sm-6 order-sm-2">
+          <div class="widget address">
+            <ul class="list-unstyled">
+              <li class="media mb-3"><i class="fas fa-map-marked-alt mr-3 display-8"></i>216 Coburn Shahi Road Mumbai, Near Center Road, IL 54785. </li>
+              <li class="media mb-3"><i class="mr-3 display-8 fas fa-headphones-alt"></i> (547) 457-5757 </li>
+              <li class="media mb-3"><i class="mr-3 display-8 far fa-envelope"></i> help@travelGo.com</li>
+              <li class="media mb-3"><i class="mr-3 display-8 far fa-clock"></i>
+                <p>Thứ 2 - 7: <strong>07:00 - 20:00</strong> <br>
+                  Chủ Nhật: <strong>Đóng cửa</strong></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider mt-3"></div>
+  <!--footer copyright -->
+  <div class="footer-copyright py-3">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left"> 
+        <!-- copyright text -->
+        <div class="copyright-text">©2019 All Rights Reserved by <a href="#!"> izicar.</a></div>
+        <!-- copyright links--> 
+        
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- =======================
+	footer  --> 
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="js/jquery.min.js" type="text/javascript"></script> 
+<script src="js/popper.min.js" type="text/javascript"></script> 
+<script src="js/select2.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/functions.js" type="text/javascript"></script> 
+<!--
+<script src="js/owl.carousel.min.js" type="text/javascript"></script> 
+<script src="js/slick.js" type="text/javascript"></script>
+-->
+<script src="js/swiper.min.js" type="text/javascript"></script> 
+<!--
+<script src="js/main.js" type="text/javascript"></script> 
+-->
+<!--
+<script src="js/jquery.fancybox.min.js" type="text/javascript"></script> 
+-->
+<script src="js/bootstrap-datepicker.min.js" type="text/javascript"></script> 
+
+<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.select-seat').select2();
+		$('.startLocation').select2();
+		$('.endLocation').select2();
+	});
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('.startLocation').on('change', function() {
+        var startLocation = $(".startLocation option:selected").val(); 
+     
+        if (startLocation) {
+          $(".endLocation option").each(function(){
+            $(this).removeAttr("disabled");
+          });
+          $('.endLocation option[value="'+startLocation+'"]').attr("disabled", true);
+        }
+      });
+    });
+
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+        if ($('#showCarImg').attr('src') != "") {
+            $('#showCarImg').show();
+        };
+    });
+    $('#inputShowCarImg').on('change', function () {
+        document.getElementById('showCarImg').src = window.URL.createObjectURL(this.files[0]);
+    })
+</script>
+</body>
+</html>
