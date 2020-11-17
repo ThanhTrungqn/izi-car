@@ -42,11 +42,12 @@ a, a:hover, a:focus {
             border-left: 0px;
             background: #fff;
             padding: 0;
-            img {
-                width: 50px;
-                height: 50px;
+            i {
+               font-size: 2.5rem;
+               padding: 7px;
                 object-fit: cover;
                 border-radius: .25rem;
+                color: $color-blue;
             }
         }
         .btn:focus {
@@ -124,7 +125,7 @@ a, a:hover, a:focus {
             }
             .profile {
                 .profile__title {
-                    h1 {
+                    h3 {
                         padding-bottom: 20px;
                         opacity: .8;
                     }
@@ -327,10 +328,42 @@ a, a:hover, a:focus {
                     }
                 }
             }
-        
+            .thong-bao {
+                .thong-bao__title {
+                    h3 {
+                        padding-bottom: 20px;
+                        opacity: .8;
+                    }
+                }
+                .thong-bao__body {
+                    padding-top: 15px;
+                    .thong-bao__body__item {
+                        @media screen and (max-width: 992px) {
+                            width: 100%;
+                        }
+                        margin: 0 auto;
+                        margin-bottom: 40px;
+                        .item__title {
+                            h3 {
+                                font-size: 1.5rem;  
+                                opacity: .8;
+                            }
+                        }
+                        .item__content {
+                            p {
+                                opacity: 0.9;
+                            }
+                        }
+                        a {
+                            float: right;
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
 .histroy-detail-modal {
     .modal-content {
         top: 75px;
@@ -351,6 +384,84 @@ a, a:hover, a:focus {
     }
     
 }
+#login-modal, #register-modal {
+    .modal-dialog {
+        .modal-content {
+            .modal-header {
+                h5.modal-title {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .modal-body {
+                .form-group i {
+                    position: absolute;
+                    z-index: 2;
+                    display: block;
+                    width: 2.375rem;
+                    height: 2.375rem;
+                    line-height: 48px;
+                    text-align: center;
+                    pointer-events: none;
+                    color: #007bff;
+                }
+            }
+            .modal-footer {
+
+            }
+        }
+    }
+}
+.btn.focus, .btn:focus {
+    box-shadow: unset;
+}
+.tab-content {
+    @media screen and (max-width: 576px) {
+        .form-group {
+            margin: 0 auto;
+        }
+    }
+    @media screen and (max-width: 375px) {
+        .form-group {
+            margin: 0 auto;
+        }
+    }
+    .form-group {
+        margin-bottom: 10px;
+        i {
+            position: absolute;
+            z-index: 2;
+            display: block;
+            width: 2.375rem;
+            height: 2.375rem;
+            line-height: 48px;
+            text-align: center;
+            pointer-events: none;
+            color: #007bff;
+        }
+       
+        input {
+            border: 1px solid $color-blue;
+            padding: 12px 15px 12px 32px;
+            opacity: 0.7;
+            font-size: 14px;
+            color: #222222;
+            font-style: bold;
+            border-radius: 0;
+        }
+    }
+    .col-md-12 {
+        .social-btn {
+            a {
+                padding: 10px;
+                i {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}
+
 .select2-container{
     width: 100% !important;
     padding: 0px 6px !important; 

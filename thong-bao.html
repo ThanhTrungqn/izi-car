@@ -179,195 +179,34 @@
         </div>
 
         <section class="dashboard pt20">
-          <div class="section-add-car">
-            
-          </div>
-          <div class="row history-table">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div class="card">
-                  <div class="header">
-                      <h2 class="float-left">Danh sách xe của tôi</h2>
-                      <a  class="btn btn-primary btn-sm float-right bg-primary-page" data-toggle="modal" data-target="#modal-them-xe">Thêm xe</a>
-
-                      <!-- Modal -->
-                      <div class="modal fade" id="modal-them-xe" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title">Thêm xe</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body row">
-                               <div class="form-group col-md-6">
-                                 <label for="">Tên xe</label>
-                                 <input type="text" name=""  class="form-control">
-                               </div>
-                               <div class="form-group col-md-6">
-                                <label for="">Loại xe</label>
-                                <input type="text" name=""  class="form-control">
-                              </div>
-                              <div class="form-group col-md-6">
-                                <label for="">Biển số</label>
-                                <input type="text" name=""  class="form-control">
-                              </div>
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="">Số ghế</label>
-                                  <select class="endLocation  custom-select select-big pl32 txt-14">
-                                   <option value="1">1</option>
-                                   <option value="2">2</option>
-                                   <option value="3">3</option>
-                                   <option value="4">4</option>
-                                   <option value="5">5</option>
-                                   <option value="6">6</option>
-                                   <option value="7">7</option>
-                                  </select>
-                                </div>
-                              </div>
-
-                              <div class="form-group col-md-6">
-                                <label for="">Ảnh xe</label>
-                                <input id="inputShowCarImg" type="file" class="form-control-file" name="" id="" placeholder="" aria-describedby="fileHelpId">
-                                <img src="" alt="" id="showCarImg" class=" p-0 mt-2 col-md-6">
-                              </div>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-primary btn-sm text-white bg-danger" data-dismiss="modal">Đóng</button>
-                              <button type="submit" class="btn btn-primary btn-sm bg-primary-page">Thêm xe</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            <div class="thong-bao row">
+                <div class="thong-bao__title col-md-12">
+                  <h3 class="title-lv1 border-bottom margin-bottom">Thông báo</h3>
+                </div>
+                <div class="thong-bao__body">
+                  <div class="thong-bao__body__item col-md-8">
+                    <div class="item__title">
+                      <h3>Thông bão 12</h3>
+                    </div>
+                    <div class="item__content">
+                      <p>Trước những diễn biến hết phức tạp của dịch bệnh COVID-19 trên thế giới, chúng ta phải “siết mạnh hơn, siết chặt hơn” các biện pháp phòng, chống dịch nếu có tư tưởng lơi lỏng, chủ quan thì rất nguy hiểm. </p>  
+                    </div>
+                    <a class="btn btn-primary-page bg-primary-page btn-sm" href="#" role="button">Chi tiết</a>
                   </div>
-                  <div class="body">
-                      <div class="table-responsive">
-                         <table class="table table-hover dashboard-task-infos">
-                              <thead>
-                                  <tr>
-                                      <th>#</th>
-                                      <th>Tên xe</th>
-                                      <th>Loại xe</th>
-                                      <th>Số ghế</th>
-                                      <th>Biển số</th>
-                                      <th>Ảnh</th>
-                                      <th>Trạng thái</th>
-                                      <th>Thao tác</th>
-                                  </tr>
-                              </thead>
-                              <tbody>
-                                  <tr>
-                                      <td>1</td>
-                                      <td>Mazda 3 1.5L Premium - 2020</td>
-                                      <td>Loại xe</td>
-                                      <td>5</td>
-                                      <td>74 B1 1928392</td>
-                                      <td><img width="100px" src="images/mazda.jpg" alt=""></td>
-                                      <td><span class="badge badge-success"><i class="fas fa-check"></i></span></td>
-                                      <td>
-                                        <div class="btn-group">
-                                           <a class="btn btn-primary btn-sm bg-primary-page mr-2"  data-toggle="modal" data-target="#modal-edit-car"><i class="far fa-edit"></i></a>
-                                           <a class="btn btn-primary btn-sm text-white bg-danger" data-toggle="modal" data-target="#modal-delete-car"><i class="far fa-trash-alt"></i></a>
-                                        </div>
-
-                                         <!-- Modal -->
-                                        <div class="modal fade" id="modal-edit-car" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-                                          <div class="modal-dialog modal-lg" role="document">
-                                            <div class="modal-content">
-                                              <div class="modal-header">
-                                                <h5 class="modal-title">Chỉnh sửa xe</h5>
-                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                  </button>
-                                              </div>
-                                              <div class="modal-body row">
-                                                <div class="form-group col-md-6">
-                                                  <label for="">Tên xe</label>
-                                                  <input type="text" name=""  class="form-control">
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                  <label for="">Loại xe</label>
-                                                  <input type="text" name=""  class="form-control">
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                  <label for="">Biển số</label>
-                                                  <input type="text" name=""  class="form-control">
-                                                </div>
-                                                <div class="col-md-6">
-                                                  <div class="form-group">
-                                                    <label for="">Số ghế</label>
-                                                    <select class="endLocation  custom-select select-big pl32 txt-14">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    </select>
-                                                  </div>
-                                                </div>
-
-                                                <div class="form-group col-md-6">
-                                                  <label for="">Ảnh xe</label>
-                                                  <input id="inputShowCarImg" type="file" class="form-control-file" name="" id="" placeholder="" aria-describedby="fileHelpId">
-                                                  <img src="" alt="" id="showCarImg" class=" p-0 mt-2 col-md-6">
-                                                </div>
-                                              </div>
-                                              <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary btn-sm text-white bg-danger" data-dismiss="modal">Đóng</button>
-                                                <button type="submit" class="btn btn-primary btn-sm bg-primary-page">Cập nhật</button>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-
-                                         <!-- Modal -->
-                                         <div class="modal fade" id="modal-delete-car" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-                                          <div class="modal-dialog " role="document">
-                                            <div class="modal-content">
-                                              <div class="modal-header">
-                                                <h5 class="modal-title">Xóa xe</h5>
-                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                  </button>
-                                              </div>
-                                              <div class="modal-body row">
-                                                  <p class="pl-3">Bạn có chắc chắn muốn xóa xe này không!</p>                                                          
-                                              </div>
-                                              <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary btn-sm bg-danger" data-dismiss="modal">Đóng</button>
-                                                <button type="submit" class="btn btn-primary btn-sm bg-primary-page">Xóa</button>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                    <td>2</td>
-                                    <td>Mazda 3 1.5L Premium - 2020</td>
-                                    <td>Loại xe</td>
-                                    <td>5</td>
-                                    <td>74 B1 1928392</td>
-                                    <td><img width="100px" src="images/mazda.jpg" alt=""></td>
-                                    <td><span class="badge badge-danger"><i class="far fa-times-circle"></i></span></td>
-                                    <td>
-                                      <div class="btn-group">
-                                        <a class="btn btn-primary btn-sm bg-primary-page mr-2"  data-toggle="modal" data-target="#modal-edit-car"><i class="far fa-edit"></i></a>
-                                        <a class="btn btn-primary btn-sm bg-danger text-white" data-toggle="modal" data-target="#modal-delete-car"><i class="far fa-trash-alt"></i></a>
-                                     </div>
-                                    </td>
-                                  </tr>
-                              </tbody>
-                          </table>
-                      </div>
+                  <!-- end thong bao item  -->
+                  <div class="thong-bao__body__item col-md-8">
+                    <div class="item__title">
+                      <h3>Thông bão 12</h3>
+                    </div>
+                    <div class="item__content">
+                      <p>Trước những diễn biến hết phức tạp của dịch bệnh COVID-19 trên thế giới, chúng ta phải “siết mạnh hơn, siết chặt hơn” các biện pháp phòng, chống dịch nếu có tư tưởng lơi lỏng, chủ quan thì rất nguy hiểm. </p>  
+                    </div>
+                    <a class="btn btn-primary-page bg-primary-page btn-sm" href="#" role="button">Chi tiết</a>
                   </div>
-              </div>
-          </div>
-        </div>
+                  <!-- end thong bao item  -->
+
+                </div>  
+            </div>
         </section>
 
       

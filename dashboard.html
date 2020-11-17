@@ -105,6 +105,16 @@
           <li class="nav-item"> <a class="nav-link" href="#">FAQs</a></li>
           <li class="nav-item"> <a class="nav-link" href="#">Tin tức</a></li>
           <li class="nav-item"> <a class="nav-link" href="#">Liên hệ</a></li>
+          <li class="nav-item"> 
+              <a href="" data-toggle="modal" data-target="#register-modal" class="nav-link btn btn-sm mb-0">
+                <button type="button" class="btn btn-sm  bg-primary-page">Đăng ký</button>
+              </a>
+          </li>
+          <li class="nav-item"> 
+            <a href="" data-toggle="modal" data-target="#login-modal" class="nav-link btn btn-sm mb-0">
+              <button type="button" class="btn btn-sm  bg-primary-page">Đăng nhập</button>
+            </a>
+        </li>
         </ul>
       </div>
       <!-- Main Menu End --> 
@@ -113,7 +123,12 @@
         <!-- extra item Search-->
         <div class="nav-item search border-0 pl-3 pr-0 px-lg-2" id="search"> <a class="nav-link" data-toggle="collapse" href="#search-open"><i class="fas fa-search"></i></a></div>
         <!-- extra item Btn-->
-        <div class="nav-item border-0 d-none d-lg-inline-block align-self-center"> <a href="#" class=" btn btn-sm bg-primary-page btn-grad text-white mb-0">Đăng chuyến xe</a></div>
+        
+        <!-- <div class="nav-item border-0 d-none d-lg-inline-block align-self-center"> 
+          <a href="#" class=" btn btn-sm bg-primary-page mb-0">Đăng chuyến xe</a>
+        </div> -->
+
+     
       </div>
       <!-- Header Extras End--> 
     </div>
@@ -121,240 +136,326 @@
   <!-- Logo Nav End --> 
 </header>
 
+  <!-- Register Modal -->
+  <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title ">Đăng ký</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body tab-content">
+          <div class="form-group col-md-10 offset-1">
+            <label for="">Tài khoản</label>
+            <i class="far fa-user"></i>
+            <input class="form-control" type="text" placeholder="Nhập tài khoản của bạn">
+          </div>
+          <div class="form-group col-md-10 offset-1">
+            <label for="">Mật khẩu</label>
+            <i class="fas fa-unlock-alt"></i>
+            <input class="form-control" type="password" placeholder="Nhập mật khẩu của bạn">
+          </div>
+          <div class="form-group col-md-10 offset-1">
+            <label for="">Xác nhận mật khẩu</label>
+            <i class="fas fa-unlock-alt"></i>
+            <input class="form-control" type="password" placeholder="Nhập mật khẩu của bạn">
+          </div>
+          <div class="col-md-12 text-right">
+            <a href="" class="text-primary-page">Bạn chưa có tài khoản? Đăng nhập ngay</a>
+          </div>
+          <div class="col-md-12 text-center mt-2">
+            <button type="button" name="" id="" class="btn btn-primary bg-primary-page btn-sm">Đăng ký</button>
+          </div>
+          <div class="col-md-12 text-center">
+            <p>hoặc đăng nhập bằng</p>
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="btn-group text-center social-btn">
+              <a href=""><i class="fab fa-google-plus-square text-danger"></i></a>
+              <a href=""><i class="fab fa-facebook text-primary-page"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="wrapper">
+   <!-- Login Modal -->
+   <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title ">Đăng nhập</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body tab-content">
+          <div class="form-group col-md-10 offset-1">
+            <label for="">Tài khoản</label>
+            <i class="far fa-user"></i>
+            <input class="form-control" type="text" placeholder="Nhập tài khoản của bạn">
+          </div>
+          <div class="form-group col-md-10 offset-1">
+            <label for="">Mật khẩu</label>
+            <i class="fas fa-unlock-alt"></i>
+            <input class="form-control" type="password" placeholder="Nhập mật khẩu của bạn">
+          </div>
+          <div class="form-group form-check col-md-10 offset-1">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+          </div>
+          <div class="col-md-12 text-right">
+            <a href="" class="text-primary-page">Quên mật khẩu?</a>
+          </div>
+          <div class="col-md-12 text-center mt-2">
+            <button type="button" name="" id="" class="btn btn-primary bg-primary-page btn-sm">Đăng nhập</button>
+          </div>
+          <div class="col-md-12 text-center">
+            <p>hoặc đăng nhập bằng</p>
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="btn-group text-center social-btn">
+              <a href=""><i class="fab fa-google-plus-square text-danger"></i></a>
+              <a href=""><i class="fab fa-facebook text-primary-page"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Sidebar -->
-    <nav id="sidebar">
-        <button type="button" id="sidebarCollapse" class="btn">
-            <i class="fas fa-align-left"></i>
+  <div class="wrapper">
+
+      <!-- Sidebar -->
+      <nav id="sidebar">
+        <button type="button" id="sidebarCollapse" class="btn sidebarCollapse">
+          <i class="fas fa-user"></i>
         </button>
         <div class="sidebar-header">
             <h3>Tài xế 01</h3>
         </div>
 
         <ul class="list-unstyled components">
-            <li class="active">
-              <a href="#"><i class="fas fa-home"></i> Bảng điều khiển</a>
+            <li>
+              <a href="dashboard.html"><i class="fas fa-home"></i> Bảng điều khiển</a>
             </li>
             <li>
                 <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                    <i class="fas fa-info-circle"></i> Thông tin tài xế</a>
+                    <i class="fas fa-info-circle active"></i> Thông tin tài xế</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li>
-                        <a href="#">Cập nhật thông tin</a>
+                    <li  class="active">
+                        <a href="profile.html">Cập nhật thông tin</a>
                     </li>
                     <li>
-                        <a href="#">Đổi mật khẩu</a>
+                        <a href="them-xe.html">Cập nhật xe</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="#"><i class="fas fa-plus-circle"></i> Thêm chuyến đi</a>
+                <a href="them-chuyen-di.html"><i class="fas fa-plus-circle"></i> Thêm chuyến đi</a>
             </li>
             <li>
-                <a href="#"><i class="fas fa-history"></i> Lịch sử chuyến đi <span class="badge badge-pill badge-info">02</span></a>
+                <a href="lich-su-chuyen-di.html"><i class="fas fa-history"></i> Lịch sử chuyến đi <span class="badge badge-pill badge-info">02</span></a>
             </li>
             <li>
-                <a href="#"><i class="far fa-bell"></i> Thông báo <span class="badge badge-pill badge-info">04</span></a>
+                <a href="thong-bao.html"><i class="far fa-bell"></i> Thông báo <span class="badge badge-pill badge-info">04</span></a>
             </li>
-           
+          
             <li>
                 <a href="#"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
             </li>
         </ul>
     </nav>
-    <!-- end #sidebar  -->
+      <!-- end #sidebar  -->
 
 
-    <!-- Page Content -->
-    <div id="content" class="container">
-        <div class="row notification">
-            <div class="col-md-10 offset-1">
-                <div class="notification-content alert alert-warning">
-                    <img src="./images/exclamation-mark.svg" alt="">
-                    <p>Hôm nay mưa to nên đi tốc độ phù hợp để tránh nguy hiểm</p>
+      <!-- Page Content -->
+      <div id="content" class="container">
+          <div class="row notification">
+              <div class="col-md-10 offset-1">
+                  <div class="notification-content alert alert-warning">
+                      <img src="./images/exclamation-mark.svg" alt="">
+                      <p>Hôm nay mưa to nên đi tốc độ phù hợp để tránh nguy hiểm</p>
+                    </div>
+              </div>
+          </div>
+
+          <section class="dashboard pt20">
+              <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <a href="#">
+                      <div class="info-box hover-expand-effect bg-warning ">
+                        <div class="icon">
+                            <i class="far fa-bell"></i>
+                        </div>
+                        <div class="content">
+                            <div class="text">Thông báo</div>
+                            <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">04</div>
+                        </div>
+                    </div>
+                    </a>
                   </div>
-            </div>
-        </div>
-
-        <section class="dashboard pt20">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                   <a href="#">
-                    <div class="info-box hover-expand-effect bg-warning ">
-                      <div class="icon">
-                          <i class="far fa-bell"></i>
-                      </div>
-                      <div class="content">
-                          <div class="text">Thông báo</div>
-                          <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">04</div>
-                      </div>
+                  <!-- end col-3  -->
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box hover-expand-effect bg-success">
+                        <div class="icon">
+                            <i class="far fa-bell"></i>
+                        </div>
+                        <div class="content">
+                            <div class="text">Lịch sử chuyến đi</div>
+                            <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">04</div>
+                        </div>
+                    </div>
                   </div>
-                   </a>
-                </div>
+                  <!-- end col-3  -->
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box hover-expand-effect bg-info ">
+                        <div class="icon">
+                            <i class="far fa-bell"></i>
+                        </div>
+                        <div class="content">
+                            <div class="text">Thống kê </div>
+                            <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">04</div>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- end col-3  -->
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box hover-expand-effect bg-primary ">
+                        <div class="icon">
+                            <i class="far fa-bell"></i>
+                        </div>
+                        <div class="content">
+                            <div class="text">Đánh giá</div>
+                            <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">04</div>
+                        </div>
+                    </div>
+                  </div>
                 <!-- end col-3  -->
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                  <div class="info-box hover-expand-effect bg-success">
-                      <div class="icon">
-                          <i class="far fa-bell"></i>
-                      </div>
-                      <div class="content">
-                          <div class="text">Lịch sử chuyến đi</div>
-                          <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">04</div>
-                      </div>
-                  </div>
-                </div>
-                <!-- end col-3  -->
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                  <div class="info-box hover-expand-effect bg-info ">
-                      <div class="icon">
-                          <i class="far fa-bell"></i>
-                      </div>
-                      <div class="content">
-                          <div class="text">Thống kê </div>
-                          <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">04</div>
-                      </div>
-                  </div>
-                </div>
-                <!-- end col-3  -->
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                  <div class="info-box hover-expand-effect bg-primary ">
-                      <div class="icon">
-                          <i class="far fa-bell"></i>
-                      </div>
-                      <div class="content">
-                          <div class="text">Đánh giá</div>
-                          <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">04</div>
-                      </div>
-                  </div>
-                </div>
-              <!-- end col-3  -->
-            </div>
-            <!-- end row  -->
+              </div>
+              <!-- end row  -->
 
-              <div class="row history-table">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                  <div class="card">
-                      <div class="header">
-                          <h2>LỊCH SỬ CHUYẾN ĐI</h2>
-                      </div>
-                      <div class="body">
-                          <div class="table-responsive">
-                              <table class="table table-hover dashboard-task-infos">
-                                  <thead>
-                                      <tr>
-                                          <th>#</th>
-                                          <th>Tên khách hàng</th>
-                                          <th>Điểm bắt đầu</th>
-                                          <th>Điểm đến</th>
-                                          <th>Thời gian</th>
-                                          <th>Trạng thái</th>
+                <div class="row history-table">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>LỊCH SỬ CHUYẾN ĐI</h2>
+                        </div>
+                        <div class="body">
+                            <div class="table-responsive">
+                                <table class="table table-hover dashboard-task-infos">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Tên khách hàng</th>
+                                            <th>Điểm bắt đầu</th>
+                                            <th>Điểm đến</th>
+                                            <th>Thời gian</th>
+                                            <th>Trạng thái</th>
 
-                                          
-                                      </tr>
-                                  </thead>
-                                  <tbody>
-                                      <tr>
-                                          <td><a class="text-info" href="" data-toggle="modal" data-target="#histroy-detail-modal">1</a></td>
-                                          <td>Khách hàng 01</td>
-                                          <td>Đà Nẵng</td>
-                                          <td>Huế</td>
-                                          <td>09:20 11-11-2020</td>
-                                          <td><span class="badge badge-danger">Bị hủy</span></td>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a class="text-info" href="" data-toggle="modal" data-target="#histroy-detail-modal">1</a></td>
+                                            <td>Khách hàng 01</td>
+                                            <td>Đà Nẵng</td>
+                                            <td>Huế</td>
+                                            <td>09:20 11-11-2020</td>
+                                            <td><span class="badge badge-danger">Bị hủy</span></td>
 
-                                          <div class="modal histroy-detail-modal"  id="histroy-detail-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                              <div class="modal-content">
-                                                <div class="modal-header">
-                                                  <h5 class="modal-title">Chi tiết chuyến đi</h5>
-                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                  </button>
-                                                </div>
-                                               <div class="modal-body">
-                                                  <div class="row">
-                                                    <div class="col-md-5">
-                                                      <span class="profile-detail-title">Mã chuyến đi</span>
-                                                    </div>
-                                                    <div class="col-md-7">
-                                                      <span>01</span>
-                                                    </div>
+                                            <div class="modal histroy-detail-modal"  id="histroy-detail-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                              <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                  <div class="modal-header">
+                                                    <h5 class="modal-title">Chi tiết chuyến đi</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                      <span aria-hidden="true">&times;</span>
+                                                    </button>
                                                   </div>
-                                                  <div class="row">
-                                                    <div class="col-md-5">
-                                                      <span class="profile-detail-title">Tên</span>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                      <div class="col-md-5">
+                                                        <span class="profile-detail-title">Mã chuyến đi</span>
+                                                      </div>
+                                                      <div class="col-md-7">
+                                                        <span>01</span>
+                                                      </div>
                                                     </div>
-                                                    <div class="col-md-7">
-                                                      <span>Tran Dinh Dat</span>
+                                                    <div class="row">
+                                                      <div class="col-md-5">
+                                                        <span class="profile-detail-title">Tên</span>
+                                                      </div>
+                                                      <div class="col-md-7">
+                                                        <span>Tran Dinh Dat</span>
+                                                      </div>
                                                     </div>
-                                                  </div>
-                                                  <div class="row">
-                                                    <div class="col-md-5">
-                                                      <span class="profile-detail-title">Email</span>
+                                                    <div class="row">
+                                                      <div class="col-md-5">
+                                                        <span class="profile-detail-title">Email</span>
+                                                      </div>
+                                                      <div class="col-md-7">
+                                                        <span>trandinhdat@gmail.com</span>
+                                                      </div>
                                                     </div>
-                                                    <div class="col-md-7">
-                                                      <span>trandinhdat@gmail.com</span>
+                                                    <div class="row">
+                                                      <div class="col-md-5">
+                                                        <span class="profile-detail-title">Số điện thoại</span>
+                                                      </div>
+                                                      <div class="col-md-7">
+                                                        <span>0981987987</span>
+                                                      </div>
                                                     </div>
-                                                  </div>
-                                                  <div class="row">
-                                                    <div class="col-md-5">
-                                                      <span class="profile-detail-title">Số điện thoại</span>
+                                                    <div class="row">
+                                                      <div class="col-md-5">
+                                                        <span class="profile-detail-title">Tài xế</span>
+                                                      </div>
+                                                      <div class="col-md-7">
+                                                        <span>Tài xế 01</span>
+                                                      </div>
                                                     </div>
-                                                    <div class="col-md-7">
-                                                      <span>0981987987</span>
-                                                    </div>
-                                                  </div>
-                                                  <div class="row">
-                                                    <div class="col-md-5">
-                                                      <span class="profile-detail-title">Tài xế</span>
-                                                    </div>
-                                                    <div class="col-md-7">
-                                                      <span>Tài xế 01</span>
-                                                    </div>
-                                                  </div>
-                                                  <div class="row">
-                                                    <div class="col-md-5">
-                                                      <span class="profile-detail-title">Ví trí ngồi</span>
-                                                    </div>
-                                                    <div class="col-md-7">
-                                                      <span>Ghế số 1</span>
+                                                    <div class="row">
+                                                      <div class="col-md-5">
+                                                        <span class="profile-detail-title">Ví trí ngồi</span>
+                                                      </div>
+                                                      <div class="col-md-7">
+                                                        <span>Ghế số 1</span>
+                                                      </div>
                                                     </div>
                                                   </div>
                                                 </div>
                                               </div>
                                             </div>
-                                          </div>
+                                        </tr>
+                                        <tr>
+                                          <td><a class="text-info" href="" data-toggle="modal" data-target="#histroy-detail-modal">2</a></td>
+                                          <td>Khách hàng 02</td>
+                                          <td>Đà Nẵng</td>
+                                          <td>Huế</td>
+                                          <td>09:20 11-11-2020</td>
+                                          <td><span class="badge badge-success">Hoàn thành</span></td>
                                       </tr>
-                                      <tr>
-                                        <td><a class="text-info" href="" data-toggle="modal" data-target="#histroy-detail-modal">2</a></td>
-                                        <td>Khách hàng 02</td>
-                                        <td>Đà Nẵng</td>
-                                        <td>Huế</td>
-                                        <td>09:20 11-11-2020</td>
-                                        <td><span class="badge badge-success">Hoàn thành</span></td>
-                                    </tr>
-                                     
-                                  </tbody>
-                              </table>
-                          </div>
-                      </div>
-                  </div>
+                                      
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
               </div>
-            </div>
 
-     
-              
-        </section>
-        <!-- end section dashboard -->
+      
+                
+          </section>
+          <!-- end section dashboard -->
+      </div>
+      <!-- end content  -->
+  </div>      
+
+  <section class="pt40 slutions">
+    <div class="container">
     </div>
-    <!-- end content  -->
-</div>      
-
-<section class="pt40 slutions">
-	<div class="container">
-	</div>
-</section>
+  </section>
 
 	<!-- footer  -->
 <footer class="footer footer-dark pt-6 position-relative">
